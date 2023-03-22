@@ -1,7 +1,12 @@
+import React from 'react'
 import './GlobalStyles.scss'
 
-const GlobalStyles = ({ children }: any) => {
-    return children
+type Props = {
+    children: React.ReactNode;
+}
+
+const GlobalStyles = ({ children }: Props) => {
+    return <>{children}</>
 }
 
 export default GlobalStyles
